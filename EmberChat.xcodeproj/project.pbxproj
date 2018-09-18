@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741D5D3F845C34619E68E478 /* Pods_EmberChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB564B2133B02899141AB23 /* Pods_EmberChat.framework */; };
+		BE70420E2151B1B500F49B6E /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70420D2151B1B500F49B6E /* FirebaseCore.framework */; };
+		BE7042102151B1B500F49B6E /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70420F2151B1B500F49B6E /* GoogleUtilities.framework */; };
+		BE7042122151B1B500F49B6E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7042112151B1B500F49B6E /* nanopb.framework */; };
+		BE7042142151B3CB00F49B6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE7042132151B3CA00F49B6E /* GoogleService-Info.plist */; };
 		BEEC77602151A020006DE0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC775F2151A020006DE0AC /* AppDelegate.swift */; };
 		BEEC77622151A020006DE0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC77612151A020006DE0AC /* ViewController.swift */; };
 		BEEC77652151A020006DE0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC77632151A020006DE0AC /* Main.storyboard */; };
@@ -15,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18357CABB0F8027FB3B2DE59 /* Pods-EmberChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmberChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmberChat/Pods-EmberChat.release.xcconfig"; sourceTree = "<group>"; };
+		6C4752702379635FD8F7D689 /* Pods-EmberChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmberChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmberChat/Pods-EmberChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7CB564B2133B02899141AB23 /* Pods_EmberChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmberChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70420D2151B1B500F49B6E /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70420F2151B1B500F49B6E /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7042112151B1B500F49B6E /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7042132151B3CA00F49B6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEEC775C2151A020006DE0AC /* EmberChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmberChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC775F2151A020006DE0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEEC77612151A020006DE0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +41,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE70420E2151B1B500F49B6E /* FirebaseCore.framework in Frameworks */,
+				BE7042102151B1B500F49B6E /* GoogleUtilities.framework in Frameworks */,
+				BE7042122151B1B500F49B6E /* nanopb.framework in Frameworks */,
+				741D5D3F845C34619E68E478 /* Pods_EmberChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A36CAA1EA7C7B2E2EB900861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE70420D2151B1B500F49B6E /* FirebaseCore.framework */,
+				BE70420F2151B1B500F49B6E /* GoogleUtilities.framework */,
+				BE7042112151B1B500F49B6E /* nanopb.framework */,
+				7CB564B2133B02899141AB23 /* Pods_EmberChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEEC77532151A020006DE0AC = {
 			isa = PBXGroup;
 			children = (
 				BEEC775E2151A020006DE0AC /* EmberChat */,
 				BEEC775D2151A020006DE0AC /* Products */,
+				E177002CD636553AABF7AB56 /* Pods */,
+				A36CAA1EA7C7B2E2EB900861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +89,18 @@
 				BEEC77662151A022006DE0AC /* Assets.xcassets */,
 				BEEC77682151A022006DE0AC /* LaunchScreen.storyboard */,
 				BEEC776B2151A022006DE0AC /* Info.plist */,
+				BE7042132151B3CA00F49B6E /* GoogleService-Info.plist */,
 			);
 			path = EmberChat;
+			sourceTree = "<group>";
+		};
+		E177002CD636553AABF7AB56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C4752702379635FD8F7D689 /* Pods-EmberChat.debug.xcconfig */,
+				18357CABB0F8027FB3B2DE59 /* Pods-EmberChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEEC776E2151A022006DE0AC /* Build configuration list for PBXNativeTarget "EmberChat" */;
 			buildPhases = (
+				1304305F0AFD4A2AC68C2DD8 /* [CP] Check Pods Manifest.lock */,
 				BEEC77582151A020006DE0AC /* Sources */,
 				BEEC77592151A020006DE0AC /* Frameworks */,
 				BEEC775A2151A020006DE0AC /* Resources */,
+				200E051FD16BA12F8B151868 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +164,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEC776A2151A022006DE0AC /* LaunchScreen.storyboard in Resources */,
+				BE7042142151B3CB00F49B6E /* GoogleService-Info.plist in Resources */,
 				BEEC77672151A022006DE0AC /* Assets.xcassets in Resources */,
 				BEEC77652151A020006DE0AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1304305F0AFD4A2AC68C2DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmberChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		200E051FD16BA12F8B151868 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmberChat/Pods-EmberChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmberChat/Pods-EmberChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEEC77582151A020006DE0AC /* Sources */ = {
@@ -280,6 +363,7 @@
 		};
 		BEEC776F2151A022006DE0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4752702379635FD8F7D689 /* Pods-EmberChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +382,7 @@
 		};
 		BEEC77702151A022006DE0AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18357CABB0F8027FB3B2DE59 /* Pods-EmberChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
